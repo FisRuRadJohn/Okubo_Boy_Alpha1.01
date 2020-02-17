@@ -8,7 +8,6 @@ public class Spawner : MonoBehaviour
     public GameObject prefabEdificio;
     public float randomRange = 2f;
 
-    // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("Edificio", 1f, 2.3f);

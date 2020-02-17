@@ -12,7 +12,7 @@ public class Obstaculos_Edificios : MonoBehaviour
         Invoke("Destroyer", 7f);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 

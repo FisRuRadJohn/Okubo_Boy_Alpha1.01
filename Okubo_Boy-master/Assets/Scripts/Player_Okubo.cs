@@ -4,29 +4,34 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-//[RequireComponent(typeof(Rigibody2d))] para obligar a que exista un rigibody y que de no tenerlo el juego no se ejecute
+
 public class Player_Okubo : MonoBehaviour
 {
     public float JumpForce = 6.5f;
     Rigidbody2D miRigidbody;
+
     public static int puntuacion;
     public Text highScoreText;
     public Text textoPuntos;
+
     public AudioSource jump;
     public AudioSource hit;
     public AudioSource coin;
+
     public GameObject pildora;
+
     public GameObject gameOver;
     public static int highscore;
     public GameObject panelDead;
+
     public int contadorBarra;
     public Text contadorSaltos;
+
     public GameObject Barra1;
     public GameObject Barra2;
     public GameObject Barra3;
     public GameObject Barra4;
     public GameObject Barra5;
-
 
     private float tiempoMuerte = 0.1f;
     bool vivo;
@@ -42,7 +47,6 @@ public class Player_Okubo : MonoBehaviour
         highScoreText.text = highscore + "";
         vivo = true;
     }
-
 
     void Update()
     {
@@ -110,7 +114,6 @@ public class Player_Okubo : MonoBehaviour
         }
     }
 
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Point")) //para que solo pase el tema de desaparecer con los objetos que tengan el tag que le he concretado
@@ -123,14 +126,11 @@ public class Player_Okubo : MonoBehaviour
         {
             other.gameObject.SetActive(false);  //hace que desaparezca el objeto cuando colisiona si tiene trigger   , si es un pick up, lo desactivo.
 
-            contadorBarra++;
+            contadorBarra+=2;
             contadorSaltos.text = contadorBarra.ToString();
 
 
         }
-
-
-
 
     }
 
@@ -149,8 +149,6 @@ public class Player_Okubo : MonoBehaviour
         
         Time.timeScale = tiempoMuerte;
 
-
     }
 
-    
 }
