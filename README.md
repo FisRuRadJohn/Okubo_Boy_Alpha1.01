@@ -1,2 +1,2 @@
 # Okubo_Boy-master
- okubin alpha mode
+ Flappy Version by Carlos and John
