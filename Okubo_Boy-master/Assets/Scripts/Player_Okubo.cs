@@ -35,11 +35,15 @@ public class Player_Okubo : MonoBehaviour
     public GameObject Barra4;
     public GameObject Barra5;
 
+    private bool isJumping;
+    private Animator anim;
+
     private float tiempoMuerte = 0.1f;
     bool vivo;
    
     void Start()
     {
+        anim = GetComponent<Animator>();
         contadorSaltos.text = contadorBarra.ToString();
         Time.timeScale = 1f;
         puntuacion = 0;
@@ -60,6 +64,8 @@ public class Player_Okubo : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Space) || Input.touchCount == 1 && Input.touches[0].phase == TouchPhase.Began)
                 {
                     miRigidbody.velocity = Vector2.up * JumpForce;
+
+                    anim.SetTrigger("Salto");
 
                     contadorBarra--;
                     contadorSaltos.text = contadorBarra.ToString();

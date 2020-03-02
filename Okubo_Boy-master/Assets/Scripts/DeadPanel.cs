@@ -32,7 +32,7 @@ public class DeadPanel : MonoBehaviour
     {
         yield return new WaitUntil(() => audioSource.isPlaying == false);
         SceneManager.LoadScene("Juego");
-        Debug.Log("alexby maricon");
+        
     }
     IEnumerator EsperarVolver()
     {
