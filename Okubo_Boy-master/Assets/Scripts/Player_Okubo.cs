@@ -17,6 +17,8 @@ public class Player_Okubo : MonoBehaviour
     public AudioSource jump;
     public AudioSource hit;
     public AudioSource coin;
+    public AudioSource pildoraSound;
+    public AudioSource music;
 
     public GameObject pildora;
 
@@ -46,6 +48,7 @@ public class Player_Okubo : MonoBehaviour
         int highscore = PlayerPrefs.GetInt("scorehigh");
         highScoreText.text = highscore + "";
         vivo = true;
+       
     }
 
     void Update()
@@ -124,6 +127,7 @@ public class Player_Okubo : MonoBehaviour
         }
         if (other.gameObject.CompareTag("PickUp"))
         {
+            pildoraSound.Play();
             other.gameObject.SetActive(false);  //hace que desaparezca el objeto cuando colisiona si tiene trigger   , si es un pick up, lo desactivo.
 
             contadorBarra+=2;
@@ -149,6 +153,10 @@ public class Player_Okubo : MonoBehaviour
         
         Time.timeScale = tiempoMuerte;
 
+
+
     }
+
+   
 
 }
