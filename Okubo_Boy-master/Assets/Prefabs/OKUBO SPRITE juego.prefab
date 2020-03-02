@@ -520,7 +520,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 725ad018d06f9944fa0f875ce6818b79, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 72e49a163ddfc494eafdb76df5578179, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -719,7 +719,7 @@ MonoBehaviour:
   textoPuntos: {fileID: 0}
   jump: {fileID: 779892113946181654}
   hit: {fileID: 948075693}
-  coin: {fileID: 5925151391254319917}
+  coin: {fileID: 6291451343402565788}
   pildoraSound: {fileID: 948075692}
   music: {fileID: 0}
   pildora: {fileID: 4394735171706725829, guid: ef7e0289a6429a14ba97572ae3128b62, type: 3}
