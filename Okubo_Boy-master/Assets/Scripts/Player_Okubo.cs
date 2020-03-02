@@ -34,6 +34,11 @@ public class Player_Okubo : MonoBehaviour
     public GameObject Barra3;
     public GameObject Barra4;
     public GameObject Barra5;
+    public GameObject Barra6;
+    public GameObject Barra7;
+    public GameObject Barra8;
+    public GameObject Barra9;
+    public GameObject Barra10;
 
     private bool isJumping;
     private Animator anim;
@@ -82,6 +87,11 @@ public class Player_Okubo : MonoBehaviour
                 Barra3.SetActive(false);
                 Barra4.SetActive(false);
                 Barra5.SetActive(false);
+                Barra6.SetActive(false);
+                Barra7.SetActive(false);
+                Barra8.SetActive(false);
+                Barra9.SetActive(false);
+                Barra10.SetActive(false);
                 break;
             case 1:
                 Barra1.SetActive(true);
@@ -89,7 +99,11 @@ public class Player_Okubo : MonoBehaviour
                 Barra3.SetActive(false);
                 Barra4.SetActive(false);
                 Barra5.SetActive(false);
-
+                Barra6.SetActive(false);
+                Barra7.SetActive(false);
+                Barra8.SetActive(false);
+                Barra9.SetActive(false);
+                Barra10.SetActive(false);
                 break;
             case 2:
                 Barra1.SetActive(true);
@@ -97,6 +111,11 @@ public class Player_Okubo : MonoBehaviour
                 Barra3.SetActive(false);
                 Barra4.SetActive(false);
                 Barra5.SetActive(false);
+                Barra6.SetActive(false);
+                Barra7.SetActive(false);
+                Barra8.SetActive(false);
+                Barra9.SetActive(false);
+                Barra10.SetActive(false);
                 break;
             case 3:
                 Barra1.SetActive(true);
@@ -104,6 +123,11 @@ public class Player_Okubo : MonoBehaviour
                 Barra3.SetActive(true);
                 Barra4.SetActive(false);
                 Barra5.SetActive(false);
+                Barra6.SetActive(false);
+                Barra7.SetActive(false);
+                Barra8.SetActive(false);
+                Barra9.SetActive(false);
+                Barra10.SetActive(false);
                 break;
             case 4:
                 Barra1.SetActive(true);
@@ -111,6 +135,11 @@ public class Player_Okubo : MonoBehaviour
                 Barra3.SetActive(true);
                 Barra4.SetActive(true);
                 Barra5.SetActive(false);
+                Barra6.SetActive(false);
+                Barra7.SetActive(false);
+                Barra8.SetActive(false);
+                Barra9.SetActive(false);
+                Barra10.SetActive(false);
                 break;
             case 5:
                 Barra1.SetActive(true);
@@ -118,6 +147,71 @@ public class Player_Okubo : MonoBehaviour
                 Barra3.SetActive(true);
                 Barra4.SetActive(true);
                 Barra5.SetActive(true);
+                Barra6.SetActive(false);
+                Barra7.SetActive(false);
+                Barra8.SetActive(false);
+                Barra9.SetActive(false);
+                Barra10.SetActive(false);
+                break;
+            case 6:
+                Barra1.SetActive(true);
+                Barra2.SetActive(true);
+                Barra3.SetActive(true);
+                Barra4.SetActive(true);
+                Barra5.SetActive(true);
+                Barra6.SetActive(true);
+                Barra7.SetActive(false);
+                Barra8.SetActive(false);
+                Barra9.SetActive(false);
+                Barra10.SetActive(false);
+                break;
+            case 7:
+                Barra1.SetActive(true);
+                Barra2.SetActive(true);
+                Barra3.SetActive(true);
+                Barra4.SetActive(true);
+                Barra5.SetActive(true);
+                Barra6.SetActive(true);
+                Barra7.SetActive(true); 
+                Barra8.SetActive(false);
+                Barra9.SetActive(false);
+                Barra10.SetActive(false);
+                break;
+            case 8:
+                Barra1.SetActive(true);
+                Barra2.SetActive(true);
+                Barra3.SetActive(true);
+                Barra4.SetActive(true);
+                Barra5.SetActive(true);
+                Barra6.SetActive(true);
+                Barra7.SetActive(true);
+                Barra8.SetActive(true);
+                Barra9.SetActive(false);
+                Barra10.SetActive(false);
+                break;
+            case 9:
+                Barra1.SetActive(true);
+                Barra2.SetActive(true);
+                Barra3.SetActive(true);
+                Barra4.SetActive(true);
+                Barra5.SetActive(true);
+                Barra6.SetActive(true);
+                Barra7.SetActive(true);
+                Barra8.SetActive(true);
+                Barra9.SetActive(true);
+                Barra10.SetActive(false);
+                break;
+            case 10:
+                Barra1.SetActive(true);
+                Barra2.SetActive(true);
+                Barra3.SetActive(true);
+                Barra4.SetActive(true);
+                Barra5.SetActive(true);
+                Barra6.SetActive(true);
+                Barra7.SetActive(true);
+                Barra8.SetActive(true);
+                Barra9.SetActive(true);
+                Barra10.SetActive(true);
                 break;
 
         }
@@ -137,6 +231,16 @@ public class Player_Okubo : MonoBehaviour
             other.gameObject.SetActive(false);  //hace que desaparezca el objeto cuando colisiona si tiene trigger   , si es un pick up, lo desactivo.
 
             contadorBarra+=2;
+            contadorSaltos.text = contadorBarra.ToString();
+
+
+        }
+        if (other.gameObject.CompareTag("PickUp2"))
+        {
+            pildoraSound.Play();
+            other.gameObject.SetActive(false);  //hace que desaparezca el objeto cuando colisiona si tiene trigger   , si es un pick up, lo desactivo.
+
+            contadorBarra += 1;
             contadorSaltos.text = contadorBarra.ToString();
 
 
