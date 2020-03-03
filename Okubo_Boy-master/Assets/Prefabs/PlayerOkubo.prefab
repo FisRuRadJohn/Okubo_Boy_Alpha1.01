@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774224537624880373}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9, y: -1.4291, z: 4}
+  m_LocalPosition: {x: -1.847, y: -1.4291, z: 4}
   m_LocalScale: {x: 0.21420784, y: 0.21420784, z: 0.21420784}
   m_Children: []
   m_Father: {fileID: 5213257581377649783}
@@ -249,7 +249,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5213257581377649783}
-  - component: {fileID: 6494553665290105525}
   - component: {fileID: 1997251652}
   - component: {fileID: 1997251653}
   - component: {fileID: 1997251649}
@@ -284,25 +283,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &6494553665290105525
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4192960133028848267}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 241ed8d5bf049b94792a6207cac1901d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &1997251652
 Rigidbody2D:
   serializedVersion: 4
@@ -370,6 +350,11 @@ MonoBehaviour:
   Barra3: {fileID: 0}
   Barra4: {fileID: 0}
   Barra5: {fileID: 0}
+  Barra6: {fileID: 0}
+  Barra7: {fileID: 0}
+  Barra8: {fileID: 0}
+  Barra9: {fileID: 0}
+  Barra10: {fileID: 0}
 --- !u!82 &6253456065230367619
 AudioSource:
   m_ObjectHideFlags: 0
@@ -779,7 +764,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4975684383214678796}
   m_LocalRotation: {x: -0, y: -0, z: 0.40826514, w: 0.9128634}
-  m_LocalPosition: {x: -1.742, y: -1.408, z: 4.778}
+  m_LocalPosition: {x: -1.518, y: -1.525, z: 4.778}
   m_LocalScale: {x: 0.26366055, y: 0.2636606, z: 0.2636606}
   m_Children: []
   m_Father: {fileID: 5213257581377649783}
